@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Alarm</string>
+    <string name="alarm_setting">Alarm Settings</string>
+    <string name="alarm_time_hint">Enter a minute to trigger alarm</string>
+    <string name="alarm_repeat">Repeat</string>
+    <string name="alarm_exact">Exact time</string>
+    <string name="alarm_set">Set Alarm</string>
 </resources>

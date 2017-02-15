@@ -11,7 +11,42 @@
     tools:context="com.kosrat.alarm.MainActivity">
 
     <TextView
+        android:id="@+id/tv_alarm_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:gravity="center_vertical"
+        android:text="@string/alarm_setting"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/et_alarm_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_alarm_settings"
+        android:hint="@string/alarm_time_hint"
+        android:inputType="numberDecimal" />
+
+    <Switch
+        android:id="@+id/st_alarm_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:layout_below="@id/et_alarm_time"
+        android:text="@string/alarm_repeat" />
+
+    <Switch
+        android:id="@+id/st_alarm_exact"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:layout_below="@id/st_alarm_repeat"
+        android:text="@string/alarm_exact" />
+
+    <Button
+        android:id="@+id/btn_alarm_set"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@id/st_alarm_exact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/alarm_set" />
 </RelativeLayout>
