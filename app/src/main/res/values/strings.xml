@@ -5,4 +5,6 @@
     <string name="alarm_repeat">Repeat</string>
     <string name="alarm_exact">Exact time</string>
     <string name="alarm_set">Set Alarm</string>
+    <string name="notification_title">Title</string>
+    <string name="notification_body">Notification content goes here</string>
 </resources>
