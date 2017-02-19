@@ -29,7 +29,7 @@ public class AlarmManagerUtils extends BroadcastReceiver {
      */
     public static PendingIntent createPendingIntent(Context context) {
 
-        Intent intent = new Intent(context, AlarmManager.class);
+        Intent intent = new Intent(context, AlarmManagerUtils.class);
         return PendingIntent.getBroadcast(context, PENDING_INTENT_REQUEST_CODE,
                 intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
@@ -113,6 +113,7 @@ public class AlarmManagerUtils extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        context.startService(intent);
+        Log.i("Alarm", "onReceive: ");
+        context.startService(new Intent(context, AlarmService.class));
     }
 }

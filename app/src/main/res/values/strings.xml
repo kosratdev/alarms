@@ -7,4 +7,5 @@
     <string name="alarm_set">Set Alarm</string>
     <string name="notification_title">Title</string>
     <string name="notification_body">Notification content goes here</string>
+    <string name="alarm_interval_hint">Repeating interval in Seconds</string>
 </resources>

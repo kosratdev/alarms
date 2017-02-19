@@ -27,11 +27,19 @@
         android:hint="@string/alarm_time_hint"
         android:inputType="numberDecimal" />
 
+    <EditText
+        android:id="@+id/et_alarm_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_alarm_time"
+        android:hint="@string/alarm_interval_hint"
+        android:inputType="numberDecimal" />
+
     <Switch
         android:id="@+id/st_alarm_repeat"
         android:layout_width="match_parent"
         android:layout_height="?attr/listPreferredItemHeightSmall"
-        android:layout_below="@id/et_alarm_time"
+        android:layout_below="@id/et_alarm_interval"
         android:text="@string/alarm_repeat" />
 
     <Switch
@@ -48,5 +56,6 @@
         android:layout_below="@id/st_alarm_exact"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
-        android:text="@string/alarm_set" />
+        android:text="@string/alarm_set"
+        android:onClick="setAlarm"/>
 </RelativeLayout>
